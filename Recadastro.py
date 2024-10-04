@@ -247,7 +247,7 @@ def main(pagina):
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    "Projeto Recadastro\\Versão de Produção Recadastro\\Versão de produção 2\\credentials.json", SCOPES
+                    "credentials.json", SCOPES
                 )
                 # Use this line instead of run_local_server
                 creds = flow.run_console()
