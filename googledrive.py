@@ -8,7 +8,7 @@ from googleapiclient.discovery import build
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 # Caminho para o arquivo de credenciais JSON
-CLIENT_SECRET_FILE = 'Projeto Recadastro\\Versão de Produção Recadastro\\Versão de produção 3\\credentials.json'  # Altere para o seu caminho
+CLIENT_SECRET_FILE = 'credentials.json'  # Altere para o seu caminho
 
 # Verificar se o token de acesso já existe
 if os.path.exists('Projeto Recadastro\\Versão de Produção Recadastro\\Versão de produção 3\\token.json'):
