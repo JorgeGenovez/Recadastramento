@@ -239,7 +239,7 @@ def main(pagina):
 
         creds = None
 
-        if os.path.exists("Projeto Recadastro\\Versão de Produção Recadastro\\Versão de produção 2\\token.json"):
+        if os.path.exists("token.json"):
             creds = Credentials.from_authorized_user_file("Projeto Recadastro\\Versão de Produção Recadastro\\Versão de produção 2\\token.json", SCOPES)
 
         if not creds or not creds.valid:
@@ -252,7 +252,7 @@ def main(pagina):
                 # Use this line instead of run_local_server
                 creds = flow.run_console()
         
-            with open("Projeto Recadastro\\Versão de Produção Recadastro\\Versão de produção 2\\token.json", "w") as token:
+            with open("token.json", "w") as token:
                 token.write(creds.to_json())
 
         # Exemplo de chamada para adicionar dados à planilha
